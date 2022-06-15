@@ -1,0 +1,27 @@
+#text-animation-header {
+			font-size: 3vw;
+			font-weight: bold;
+			color: var(--logo-color);
+			text-shadow: 0 0 2px var(--logo-color);
+			overflow: hidden;
+			border-right: 0.15em solid var(--logo-color);
+			white-space: nowrap;
+			margin: 0 auto;
+			letter-spacing: 0.15em;
+			word-break: break-all;
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+			font-family: "Source Code Pro", monospace;
+		}
+		.blink {
+			animation: blink 0.5s step-end infinite;
+		}
+		@keyframes blink {
+			from,
+			to {
+				border-color: transparent;
+			}
+			50% {
+				border-color: var(--logo-color);
+			}
+		}
